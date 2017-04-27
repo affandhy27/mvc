@@ -122,7 +122,7 @@ public class home extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Kategori Barang : ");
 
-        cbKategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbKategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Baranglain" }));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -131,7 +131,7 @@ public class home extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Harga :");
 
-        cbJenis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbJenis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pack" }));
 
         txtKode.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -263,7 +263,7 @@ public class home extends javax.swing.JFrame {
 
         jLabel8.setText("Pencarian Berdasarkan Kategori :");
 
-        pencarian.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        pencarian.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Baranglain" }));
 
         cari.setText("Cari");
         cari.addActionListener(new java.awt.event.ActionListener() {
@@ -445,4 +445,43 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JTextField txtNama;
     private javax.swing.JButton ubah;
     // End of variables declaration//GEN-END:variables
+
+    public JTextField getTxtKode(){
+        return txtKode;
+    }
+    public JTextField getTxtNama(){
+        return txtNama;
+    }
+    public JTextField getTxtHarga(){
+        return txtHarga;
+    }
+    public JComboBox getCbKategori(){
+        return cbKategori;
+    }
+    public JComboBox getCbJenis(){
+        return cbJenis;
+    }
+    public JComboBox getCbCariKategori(){
+        return pencarian;
+    }
+    public JButton getButtonHapus(){
+        return hapus;
+    }
+    
+    public JButton getButtonBersih(){
+        return bersih;
+    }
+    public JButton getButtonSimpan(){
+        return simpan;
+    }
+    public JButton getButtonUbah(){
+        return ubah;
+    }
+    public JButton getButtonKeluar(){
+        return keluar;
+    }
+    public JTable getTableData(){
+        return Table1;
+    }
+
 }

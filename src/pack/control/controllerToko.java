@@ -74,7 +74,7 @@ public class controllerToko {
 
     public void isiTable() {
     lt =impToko.getAll();
-    tableModelToko tmt = new tableModelToko(lt);
+    TableModelToko tmt = new TableModelToko(lt);
     hm.getTableData().setModel(tmt);
     
     }
@@ -98,7 +98,7 @@ public class controllerToko {
 
     private void isiTableCariKategori() {
        lt =impToko.getCariKategori((String) hm.getCbKategori().getSelectedItem());
-       tableModelToko tmt = new tableModelToko(lt);
+       TableModelToko tmt = new TableModelToko(lt);
        hm.getTableData().setModel(tmt);
        
     }
